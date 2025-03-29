@@ -47,8 +47,8 @@ header {
 }
 
 header img {
-    height: 50px;
-    alt: "Company Logo";
+    width: 150;
+    height: auto;
 }
 
 nav a {
@@ -159,3 +159,7 @@ a:hover, a:focus {
     color: var(--accent1-color);
     text-decoration: underline;
 }
+.fa-rotate-by {
+    transform: rotate(0deg) !important;  /* Forces a valid value */
+}
+
