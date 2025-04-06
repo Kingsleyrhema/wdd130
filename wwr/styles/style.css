@@ -1,0 +1,165 @@
+/* Root Variables */
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #48cae4;
+    --accent1-color: #ff6b35;
+    --accent2-color: #f9c74f;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+}
+
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Ensure Proper Heading Structure */
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-color);
+    padding: 1rem;
+}
+
+header img {
+    width: 150;
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 500px; /* Ensures proper aspect ratio */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    max-width: 500px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Adventure Images */
+section img {
+    width: 150px;
+    margin: 5px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Social Links */
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sociallinks a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.sociallinks a:hover {
+    color: var(--accent1-color);
+}
+
+/* Accessibility - High Contrast */
+a {
+    color: var(--primary-color);
+}
+
+a:hover, a:focus {
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+.fa-rotate-by {
+    transform: rotate(0deg) !important;  /* Forces a valid value */
+}
+
